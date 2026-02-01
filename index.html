@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fancybox.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="css/icons/bootstrap-icons.min.css" />
+    <style>
+        .splide__pagination {
+            right: unset;
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-black bg-white" aria-label="First navbar example">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#"><i class="bi bi-apple text-dark h2"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+                aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample01">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 1seçtion -->
+    <div class="container-xxl px-5">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="text-start mb-3">
+                    <div class="text-dark h2">
+                        <i class="bi bi-apple text-dark"></i> WATCH <span class="h0 fw-bold text-danger">SERIES 4</span>
+                    </div>
+                    <div class="text-black display-1  pb-3 fw-bold">
+                        Big News.
+                    </div>
+                    <div class="fw-bold pb-4 pt-3">
+                        Introducing Apple Watch Series 4. <br> Fundamentally Redesigned And Re-Engineered <br> To Help You Stay Even More Active, Helalthy, And Connected.
+                    </div>
+                    <div>
+                        <button class="btn bg-danger fw-normal px-5 py-2 text-white rounded-0">Watch the keynote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <img src="img/1 (6).jpeg" class="w-100" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/aos.js"></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/splide.min.js "></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var splide = new Splide(".splide", {
+                type: "loop",
+                autoplay: true,
+                interval: 1e3,
+                perPage: 4,
+                perMove: 1,
+                gap: "1rem",
+                pagination: 0,
+                breakpoints: {
+                    767: {
+                        perPage: 1,
+                        perMove: 1,
+                    },
+                },
+            });
+            splide.mount();
+        });
+    </script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>

@@ -8736,7 +8736,7 @@ fieldset:disabled .btn {
   background-color: var(--bs-dark-bg-subtle) !important;
 }
 .bg-gradient {
-  background-image: var(--bs-gradient) !important;
+  background-image: !important;
 }
 .user-select-all {
   -webkit-user-select: all !important;
